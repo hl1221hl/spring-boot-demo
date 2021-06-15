@@ -38,5 +38,13 @@ public class BaseController {
         log.info("welcome");
         return "welcome";
     }
+
+    @RequestMapping("/index3")
+    public String index3(Model model){
+        log.info("index");
+        int a = 1;
+        model.addAttribute("username", "jiangzhiyong");
+        return "index";
+    }
 	
 }
