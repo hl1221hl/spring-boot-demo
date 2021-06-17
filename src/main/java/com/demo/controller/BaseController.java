@@ -26,6 +26,7 @@ public class BaseController {
 	@RequestMapping("/index")
 	public String index(Model model){
         log.info("index");
+        int aaaa = 222;
         model.addAttribute("username", "jiangzhiyong");
 		return "index";
 	}
@@ -42,7 +43,6 @@ public class BaseController {
     @RequestMapping("/index3")
     public String index3(Model model){
         log.info("index");
-        int a = 1;
         model.addAttribute("username", "jiangzhiyong");
         return "index";
     }
