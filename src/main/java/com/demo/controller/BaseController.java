@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class BaseController {
 
     private static final Logger log = LoggerFactory.getLogger(BaseController.class);
-    public static final String INDEX = "index";
+    public static final String URL_INDEX = "index";
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String root() {
@@ -29,7 +29,7 @@ public class BaseController {
         log.info("this is index");
         int aaaa2222 = 222;
         model.addAttribute("username", "jiangzhiyong");
-		return INDEX;
+		return URL_INDEX;
 	}
 
     /**
@@ -45,7 +45,7 @@ public class BaseController {
     public String index3(Model model){
         log.info("this is index3");
         model.addAttribute("username", "jiangzhiyong");
-        return INDEX;
+        return URL_INDEX;
     }
 	
 }
